@@ -1,0 +1,23 @@
+{
+    "extends": [
+        "airbnb"
+    ],
+    "globals": {
+        "afterAll": true,
+        "afterEach": true,
+        "beforeAll": true,
+        "beforeEach": true,
+        "describe": true,
+        "expect": true,
+        "fit": true,
+        "it": true,
+        "jasmine": true,
+        "xit": true,
+        "jest": true
+    },
+    "lint-staged": {
+        "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+            "git add"
+        ]
+    }
+}
