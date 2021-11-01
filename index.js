@@ -19,6 +19,8 @@ app.get("/cats/:id", async (req, res) => {
   const catIndices = Object.keys(cats);
 
   if (catIndices.includes(catId)) {
+
+    
     const selectedCat = await getCat(catId);
     res.json(selectedCat);
   } else {
